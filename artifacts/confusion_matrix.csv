@@ -1,0 +1,3 @@
+actual \ predicted,ham,spam
+ham,186,10
+spam,20,154

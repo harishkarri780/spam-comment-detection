@@ -1,0 +1,92 @@
+{
+  "selected_model": "Linear Support Vector Machine",
+  "dataset": "UCI YouTube Spam Collection (5 videos)",
+  "total_samples": 1956,
+  "train_samples": 1586,
+  "test_samples": 370,
+  "holdout_video": "Youtube05-Shakira.csv",
+  "deployment_training_samples": 1956,
+  "deployment_model_note": "After the held-out evaluation was recorded, the selected model was refit on all five videos for deployment.",
+  "label_mapping": {
+    "0": "ham",
+    "1": "spam"
+  },
+  "training_class_counts": {
+    "ham": 755,
+    "spam": 831
+  },
+  "test_class_counts": {
+    "ham": 196,
+    "spam": 174
+  },
+  "group_cross_validation": {
+    "Multinomial Naive Bayes": {
+      "fold_f1_macro": [
+        0.824476750180431,
+        0.8555531914893617,
+        0.8316246972562291,
+        0.8053195792880259
+      ],
+      "mean_f1_macro": 0.8292435545535118,
+      "std_f1_macro": 0.017978778133550578
+    },
+    "Linear Support Vector Machine": {
+      "fold_f1_macro": [
+        0.9394033514515443,
+        0.9176003344481605,
+        0.9257045818229319,
+        0.9139457120377655
+      ],
+      "mean_f1_macro": 0.9241634949401005,
+      "std_f1_macro": 0.009773770234050448
+    }
+  },
+  "holdout_metrics": {
+    "accuracy": 0.918918918918919,
+    "precision_spam": 0.9390243902439024,
+    "recall_spam": 0.8850574712643678,
+    "f1_spam": 0.9112426035502958,
+    "macro_f1": 0.918307868939327
+  },
+  "classification_report": {
+    "ham": {
+      "precision": 0.9029126213592233,
+      "recall": 0.9489795918367347,
+      "f1-score": 0.9253731343283582,
+      "support": 196.0
+    },
+    "spam": {
+      "precision": 0.9390243902439024,
+      "recall": 0.8850574712643678,
+      "f1-score": 0.9112426035502958,
+      "support": 174.0
+    },
+    "accuracy": 0.918918918918919,
+    "macro avg": {
+      "precision": 0.9209685058015629,
+      "recall": 0.9170185315505512,
+      "f1-score": 0.918307868939327,
+      "support": 370.0
+    },
+    "weighted avg": {
+      "precision": 0.9198949126725589,
+      "recall": 0.918918918918919,
+      "f1-score": 0.9187279658002965,
+      "support": 370.0
+    }
+  },
+  "confusion_matrix_labels_order": [
+    "ham",
+    "spam"
+  ],
+  "confusion_matrix": [
+    [
+      186,
+      10
+    ],
+    [
+      20,
+      154
+    ]
+  ]
+}
